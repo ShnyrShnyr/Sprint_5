@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-from src.data import get_sign_up_data
 
 class RegLocators: # страница регистрации
     NAME_FIELD = By.XPATH, "//label[text()='Имя']" # поле ввода Имени
@@ -18,3 +17,5 @@ class MainPageLocators: # главная страница
     ENTER_BUTTON = By. XPATH, "// button[text() = 'Войти в аккаунт']" # кнопка войти в аккаунт
     ORDER_BUTTON = By.XPATH, "//button[text()='Оформить заказ']" # кнопка оформить заказ
     PERSONAL_ACCOUNT = By.XPATH, "//p[text()='Личный Кабинет']" # кнопка личный кабинет
+    CONSTRUCTOR_BUTTON = By.XPATH, "//p[text()='Конструктор']"  # кнопка конструктор
+    HEADER_OF_CONSTRATOR = By.CLASS_NAME, "text text_type_main-large mb-5 mt-10" # заголовок Соберите бургер

@@ -3,6 +3,7 @@ from selenium import webdriver
 from src.config import Config
 from src.locators import RegLocators
 from src.data import get_sign_up_data
+login, good_pass, wrong_pass = get_sign_up_data()
 
 def browser_settings():
     chrome_options = webdriver.ChromeOptions()
@@ -21,6 +22,6 @@ def driver():
 @pytest.fixture
 def registration(password, driver):
     driver.find_element(RegLocators.NAME_FIELD).send_keys('Андрей')
-    driver.find_element(RegLocators.EMAIL_FIELD).send_keys(get_sign_up_data.login)
+    driver.find_element(RegLocators.EMAIL_FIELD).send_keys(login)
     driver.find_element(RegLocators.PASS_FIELD).send_keys(password)
     driver.find_element(RegLocators.REG_BUTTON).click()
