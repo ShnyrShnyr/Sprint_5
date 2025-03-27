@@ -24,7 +24,8 @@ class MainPageLocators: # главная страница
     BUNS_TEXT = By.XPATH, "//h2[text()='Булки']" # текст булки
     SOUSES_TEXT = By.XPATH, "//h2[text()='Соусы']"  # текст Соусы
     FILLINGS_TEXT = By.XPATH, "//h2[text()='Начинки']"  # текст Начинки
-    BUNS_MENU = By.XPATH, "//div[contains(@class, 'current')]" # заголовок булки кликабельный выбранный
+    CHANGED_MENU = By.XPATH, "//div[contains(@class, 'current')]" # заголовок меню выбранный
+    BUNS_MENU = By.XPATH, "//span[text()='Булки']" # заголовок булки кликабельный
     SOUSES_MENU = By.XPATH, "//span[text()='Соусы']" # заголовок соусы кликабельный
     FILLINGS_MENU = By.XPATH, "//span[text()='Начинки']" # заголовок начинки кликабельный
 
