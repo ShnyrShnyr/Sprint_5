@@ -6,11 +6,6 @@ from src.locators import MainPageLocators
 
 
 class TestMenu:
-    def test_menu_buns(self, driver):
-        if driver.find_element(*MainPageLocators.BUNS_MENU):
-            element = WebDriverWait(driver,Config.TIMEOUT).until(ec.visibility_of_element_located(MainPageLocators.CHANGED_MENU))
-            class_value = element.get_attribute("class")
-        assert 'current' in class_value, "Failed BUNS click"
 
     def test_menu_souses(self, driver):
         driver.find_element(*MainPageLocators.SOUSES_MENU).click()
@@ -23,3 +18,9 @@ class TestMenu:
         element = WebDriverWait(driver, Config.TIMEOUT).until(ec.visibility_of_element_located(MainPageLocators.CHANGED_MENU))
         class_value = element.get_attribute("class")
         assert 'current' in class_value, "Failed FILLINGS click"
+
+    def test_menu_buns(self, driver):
+        driver.find_element(*MainPageLocators.BUNS_MENU)
+        element = WebDriverWait(driver,Config.TIMEOUT).until(ec.visibility_of_element_located(MainPageLocators.CHANGED_MENU))
+        class_value = element.get_attribute("class")
+        assert 'current' in class_value, "Failed BUNS click"
