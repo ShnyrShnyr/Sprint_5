@@ -16,7 +16,9 @@ class SignInLocators: # страница авторизации
     REG_TEXT = By.XPATH, "//form/button"  # текстовая ссылка Зарегистрироваться
 
 class MainPageLocators: # главная страница
-
+    ENTER_BUTTON = By.XPATH, "//nav/a"  # кнопка войти в аккаунт
+    ORDER_BUTTON = By.XPATH, "//button[text()='Войти в аккаунт']"  # кнопка оформить заказ
+    CONSTRUCTOR_BUTTON = By.XPATH, "//a[.//p[text()='Конструктор']]"  # кнопка конструктор
     HEADER_OF_CONSTRATOR = By.XPATH, "//h1" # заголовок Соберите бургер
     LOGO = By.XPATH, "//div/a" # логотип в хедерах
     BUNS_TAB = By.XPATH, "//span[text()='Булки']/.."  # таб булки
