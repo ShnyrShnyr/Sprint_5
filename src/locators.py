@@ -15,19 +15,7 @@ class SignInLocators: # страница авторизации
     ENTRANCE_HEADER = By.XPATH, "//main/div/h2" # заголовок вход
     REG_TEXT = By.XPATH, "//form/button"  # текстовая ссылка Зарегистрироваться
 
-class MainPageLocators: # главная страница
-    ENTER_BUTTON = By. XPATH, "//nav/a" # кнопка войти в аккаунт
-    ORDER_BUTTON = By.XPATH, "//button[text()='Войти в аккаунт']" # кнопка оформить заказ
-    CONSTRUCTOR_BUTTON = By.XPATH, "//a[.//p[text()='Конструктор']]"  # кнопка конструктор
-    HEADER_OF_CONSTRATOR = By.XPATH, "//h1" # заголовок Соберите бургер
-    LOGO = By.XPATH, "//div/a" # логотип в хедерах
-    BUNS_TEXT = By.XPATH, "//h2[text()='Булки']" # текст булки
-    SOUSES_TEXT = By.XPATH, "//h2[text()='Соусы']"  # текст Соусы
-    FILLINGS_TEXT = By.XPATH, "//h2[text()='Начинки']"  # текст Начинки
-    CHANGED_MENU = By.XPATH, "//div[contains(@class, 'current')]" # заголовок меню выбранный
-    BUNS_MENU = By.XPATH, "//span[text()='Булки']" # заголовок булки кликабельный
-    SOUSES_MENU = By.XPATH, "//span[text()='Соусы']" # заголовок соусы кликабельный
-    FILLINGS_MENU = By.XPATH, "//span[text()='Начинки']" # заголовок начинки кликабельный
+
 
 
 class PersonalAccount:
