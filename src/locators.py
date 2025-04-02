@@ -21,14 +21,15 @@ class MainPageLocators: # главная страница
     CONSTRUCTOR_BUTTON = By.XPATH, "//a[.//p[text()='Конструктор']]"  # кнопка конструктор
     HEADER_OF_CONSTRATOR = By.XPATH, "//h1" # заголовок Соберите бургер
     LOGO = By.XPATH, "//div/a" # логотип в хедерах
-    BUNS_TEXT = By.XPATH, "//h2[text()='Булки']" # текст булки
+    BUNS_TAB = By.XPATH, "//span[text()='Булки']/.."  # таб булки
+    SOUSES_TAB = By.XPATH, "//span[text()='Соусы']/.."  # таб соусы
+    FILLINGS_TAB = By.XPATH, "//span[text()='Начинки']/.."  # таб начинки
+    BUNS_MENU = By.XPATH, "//span[text()='Булки']" # заголовок булки
+    SOUSES_MENU = By.XPATH, "//span[text()='Соусы']" # заголовок соусы
+    FILLINGS_MENU = By.XPATH, "//span[text()='Начинки']" # заголовок начинки
+    BUNS_TEXT = By.XPATH, "//h2[text()='Булки']"  # текст булки
     SOUSES_TEXT = By.XPATH, "//h2[text()='Соусы']"  # текст Соусы
     FILLINGS_TEXT = By.XPATH, "//h2[text()='Начинки']"  # текст Начинки
-    CHANGED_MENU = By.XPATH, "//div[contains(@class, 'current')]" # заголовок меню выбранный
-    BUNS_MENU = By.XPATH, "//span[text()='Булки']" # заголовок булки кликабельный
-    SOUSES_MENU = By.XPATH, "//span[text()='Соусы']" # заголовок соусы кликабельный
-    FILLINGS_MENU = By.XPATH, "//span[text()='Начинки']" # заголовок начинки кликабельный
-
 
 class PersonalAccount:
     EXIT_TEXT = By.XPATH, "//button[text()='Выход']" # текстовая ссылка Выход
